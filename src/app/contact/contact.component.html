@@ -1,0 +1,32 @@
+<div class="parent">
+  <p class=""> contact works!</p>
+
+  <form #f = "ngForm" (ngSubmit)="onSubmit(f)" novalidate >
+    <div class="input-group" align-content="center" id="first">
+    <label class="input-group-text" id="basic-addon1">first name</label>
+      <input  name="first" ngModel required #first class="g-col-4 form-control" placeholder="first name" aria-label="first name" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group" id="last">
+      <label class="input-group-text" id="basic-addon1">last name</label>
+      <input name="last" ngModel required #last class="form-control" placeholder="last name" aria-label="last name" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group" id="email">
+      <label class="input-group-text" id="basic-addon1">email</label>
+      <input name="email" ngModel required #email class="form-control" placeholder="email  " aria-label="email" aria-describedby="basic-addon1">
+    </div>
+      <div class="input-group" id="message">
+      <label class="input-group-text" id="basic-addon1">message</label>
+      <input name="message" ngModel required #message class="form-control" placeholder="message" aria-label="message" aria-describedby="basic-addon1"> 
+    </div>
+    <div id="submit"> 
+      <button>Submit</button>
+    </div>
+     
+    </form>
+    <p>First name value: {{ first.value }}</p>
+    <p>last name value: {{ last.value }}</p>
+    <p>email valid: {{ email.validity }}</p>
+    <p>Form value: {{ f.value| json }}</p>
+    <p>Form valid: {{ f.valid }}</p>
+</div>
+

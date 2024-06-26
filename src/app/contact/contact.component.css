@@ -1,0 +1,28 @@
+.parent{
+
+    background-color: brown;
+}
+#first {
+    width: 500px;
+    margin: auto;
+}
+
+#last {
+    width: 500px; 
+    margin: auto;
+}
+#email{
+    width: 500px; 
+    margin: auto;
+}
+#message{
+    width: 500px; 
+    margin: auto;
+}
+#submit {
+    text-align:center;
+}
+p {
+    margin: auto;
+    text-align: center;
+}

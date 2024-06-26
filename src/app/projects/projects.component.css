@@ -1,0 +1,14 @@
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+div{
+    background-color: chocolate;
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
